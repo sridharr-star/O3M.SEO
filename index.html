@@ -3,23 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CUMI Dealer Uttar Pradesh</title>
-
+  <title>CUMI Dealer Uttar Pradesh | Authorised Dealership Opportunity</title>
+  <meta name="description" content="Apply for CUMI Abrasives dealership in Uttar Pradesh. Explore a ₹300+ Cr abrasive market with strong demand, repeat-use products, and dealer growth opportunity." />
+  <meta name="theme-color" content="#0d7fd3" />
   <style>
     :root {
-      --primary: #0f86d8;
-      --primary-dark: #0a5e97;
-      --accent: #f4c430;
-      --green: #1fa463;
-      --dark: #0f1e2d;
-      --text: #1d2b38;
-      --muted: #5f7385;
-      --bg: #f4f8fb;
+      --bg: #07131f;
+      --bg-2: #0d1f31;
+      --panel: rgba(255,255,255,0.08);
+      --panel-strong: rgba(255,255,255,0.12);
+      --line: rgba(255,255,255,0.12);
+      --line-soft: rgba(255,255,255,0.08);
       --white: #ffffff;
-      --border: #dbe6ee;
-      --shadow: 0 14px 34px rgba(11, 48, 77, 0.10);
-      --radius: 18px;
-      --max: 1180px;
+      --text: #eff6fc;
+      --muted: #bed0df;
+      --muted-2: #8ea7bc;
+      --dark-text: #14283a;
+      --primary: #1391eb;
+      --primary-2: #50c2ff;
+      --accent: #ffc928;
+      --accent-2: #ffe07a;
+      --green: #1abc69;
+      --green-2: #18a65d;
+      --shadow-lg: 0 24px 60px rgba(0,0,0,0.28);
+      --shadow-md: 0 14px 34px rgba(0,0,0,0.20);
+      --shadow-sm: 0 8px 18px rgba(0,0,0,0.12);
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-sm: 12px;
+      --max: 1220px;
+      --header-h: 82px;
     }
 
     * { box-sizing: border-box; }
@@ -27,107 +41,185 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
       color: var(--text);
+      line-height: 1.6;
       background:
-        radial-gradient(circle at top left, rgba(15,134,216,0.08), transparent 26%),
-        linear-gradient(180deg, #eef7fd 0%, #f8fbfd 100%);
+        radial-gradient(circle at top left, rgba(80,194,255,0.18), transparent 26%),
+        radial-gradient(circle at top right, rgba(255,201,40,0.12), transparent 20%),
+        linear-gradient(180deg, #06111b 0%, #0a1b2a 35%, #081522 100%);
+      overflow-x: hidden;
     }
 
-    img { max-width: 100%; display: block; }
+    img { display: block; max-width: 100%; }
     a { text-decoration: none; color: inherit; }
-    .container { width: min(100% - 32px, var(--max)); margin: auto; }
-    .section { padding: 72px 0; }
-    .section-title {
-      font-size: clamp(28px, 4vw, 42px);
-      line-height: 1.15;
-      margin: 0 0 12px;
-      color: var(--dark);
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin: 0 auto;
     }
-    .section-subtitle {
-      font-size: 18px;
-      color: var(--muted);
-      margin: 0 0 18px;
-      max-width: 760px;
+
+    .section {
+      position: relative;
+      padding: 86px 0;
     }
-    .hindi-line {
-      font-weight: 700;
-      color: var(--primary-dark);
-      margin-bottom: 12px;
+
+    .section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(100% - 32px, var(--max));
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), rgba(255,255,255,0.18), rgba(255,255,255,0.08), transparent);
     }
+
+    .section.first::before { display: none; }
+
     .eyebrow {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(19,145,235,0.14);
+      border: 1px solid rgba(80,194,255,0.24);
+      color: #cbeeff;
       font-size: 12px;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--primary-dark);
-      background: rgba(15,134,216,0.10);
-      padding: 8px 12px;
-      border-radius: 999px;
       margin-bottom: 16px;
     }
-    .card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 5px rgba(255,201,40,0.12);
     }
+
+    h1, h2, h3 {
+      margin: 0 0 14px;
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+    }
+
+    h1 { font-size: clamp(2.5rem, 5vw, 4.9rem); }
+    h2 { font-size: clamp(2rem, 3vw, 3.2rem); }
+    h3 { font-size: 1.22rem; }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .lead {
+      font-size: 1.08rem;
+      color: #deedf7;
+    }
+
+    .hindi-line {
+      font-weight: 700;
+      color: #d6efff;
+      margin-bottom: 12px;
+    }
+
+    .section-title { color: var(--white); }
+    .section-subtitle { max-width: 820px; }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.05));
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      backdrop-filter: blur(10px);
+    }
+
     .btn-wrap {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-top: 22px;
+      margin-top: 24px;
     }
+
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 48px;
-      padding: 12px 20px;
+      min-height: 50px;
+      padding: 12px 22px;
       border-radius: 999px;
-      font-weight: 700;
-      transition: 0.2s ease;
-      border: 2px solid transparent;
+      font-weight: 800;
+      font-size: 15px;
+      border: 1px solid transparent;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
     }
-    .btn:hover { transform: translateY(-1px); }
-    .btn-primary { background: var(--accent); color: #222; }
-    .btn-secondary { background: var(--green); color: #fff; }
-    .btn-outline { background: #fff; color: var(--primary); border-color: var(--primary); }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+    }
+
+    .btn-primary {
+      background: linear-gradient(180deg, var(--accent-2), var(--accent));
+      color: #1f2a35;
+    }
+
+    .btn-secondary {
+      background: linear-gradient(180deg, #1fc66f, #15aa60);
+      color: #fff;
+    }
+
+    .btn-outline {
+      background: rgba(255,255,255,0.04);
+      color: #e6f5ff;
+      border-color: rgba(255,255,255,0.16);
+    }
 
     .header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
+      background: rgba(7,19,31,0.84);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
+
     .header-inner {
-      min-height: 78px;
+      min-height: var(--header-h);
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
     }
+
     .brand {
       display: flex;
       align-items: center;
       gap: 12px;
+      min-width: 0;
     }
+
     .brand img {
-      width: 52px;
-      height: 52px;
+      width: 54px;
+      height: 54px;
       border-radius: 50%;
       background: #fff;
       object-fit: cover;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(255,255,255,0.16);
+      box-shadow: var(--shadow-sm);
     }
+
     .brand strong {
       display: block;
       font-size: 18px;
-      color: var(--dark);
+      color: #fff;
     }
+
     .brand span {
       display: block;
       font-size: 13px;
@@ -135,128 +227,210 @@
     }
 
     .hero {
-      padding: 56px 0 72px;
+      position: relative;
+      overflow: hidden;
+      padding: 60px 0 86px;
       background:
-        linear-gradient(180deg, rgba(15,134,216,0.08), rgba(255,255,255,0)),
-        linear-gradient(180deg, #f0f8fe 0%, #f8fbfd 100%);
+        linear-gradient(180deg, rgba(80,194,255,0.09), rgba(255,255,255,0)),
+        linear-gradient(180deg, #0a1826 0%, #0b1a2a 100%);
     }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.30), rgba(0,0,0,0));
+      pointer-events: none;
+    }
+
     .hero-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 24px;
       align-items: center;
+      position: relative;
+      z-index: 1;
     }
-    .hero-copy,
-    .hero-visual { padding: 26px; }
-    .hero-copy .lead {
-      font-size: 18px;
-      color: var(--muted);
-      max-width: 680px;
+
+    .hero-copy, .hero-visual { padding: 28px; }
+
+    .hero-copy {
+      border-radius: var(--radius-xl);
     }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 18px 0 0;
+    }
+
+    .hero-badge {
+      font-size: 12px;
+      font-weight: 700;
+      color: #c9ecff;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
     .hero-note {
-      margin-top: 12px;
+      margin-top: 14px;
       font-size: 14px;
-      color: var(--muted);
+      color: var(--muted-2);
       font-weight: 600;
     }
-    .hero-visual { background: linear-gradient(180deg, #ffffff 0%, #eef7fd 100%); }
+
+    .hero-visual {
+      background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.05));
+      border-radius: var(--radius-xl);
+    }
+
     .hero-creative-frame {
-      padding: 14px;
-      background: #fff;
-      border-radius: 20px;
-      border: 1px solid var(--border);
-      box-shadow: 0 16px 34px rgba(12, 56, 92, 0.14);
-      max-width: 430px;
+      padding: 16px;
+      background: linear-gradient(180deg, #ffffff, #eaf5fd);
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,0.40);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.22);
+      max-width: 440px;
       margin: 0 auto;
     }
+
     .hero-creative-frame img {
       border-radius: 14px;
       width: 100%;
       height: auto;
     }
+
     .hero-meta {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 12px;
       margin-top: 22px;
     }
+
     .mini-stat {
-      background: rgba(15,134,216,0.06);
-      border: 1px solid rgba(15,134,216,0.12);
-      padding: 14px;
-      border-radius: 14px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      padding: 15px;
+      border-radius: 15px;
     }
+
     .mini-stat strong {
       display: block;
-      color: var(--dark);
+      color: var(--white);
       margin-bottom: 4px;
     }
+
     .mini-stat span {
       color: var(--muted);
       font-size: 14px;
     }
 
-    .trust-strip {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      margin-top: 26px;
-    }
-    .trust-card,
-    .product-card,
-    .region-card,
-    .audience-card,
-    .why-card { padding: 22px; }
-    .icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 12px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      background: rgba(15,134,216,0.10);
-      margin-bottom: 12px;
-    }
-
-    .market-box {
-      padding: 30px;
-      text-align: left;
-    }
-    .big-stat {
-      font-size: clamp(40px, 5vw, 62px);
-      line-height: 1;
-      font-weight: 800;
-      color: var(--primary);
-      margin-bottom: 12px;
-    }
-
-    .grid-5 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-top: 26px;
-    }
-    .product-tag {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--primary-dark);
-      background: rgba(15,134,216,0.08);
-      padding: 6px 10px;
-      border-radius: 999px;
-      margin-bottom: 10px;
-    }
-
+    .trust-strip,
+    .grid-5,
     .region-grid,
     .two-col,
     .why-grid,
     .contact-grid,
     .form-grid {
       display: grid;
-      grid-template-columns: 1fr;
       gap: 16px;
-      margin-top: 26px;
+      margin-top: 28px;
+    }
+
+    .trust-strip { grid-template-columns: repeat(2, 1fr); }
+    .grid-5 { grid-template-columns: 1fr 1fr; }
+    .region-grid,
+    .two-col,
+    .why-grid,
+    .contact-grid,
+    .form-grid { grid-template-columns: 1fr; }
+
+    .trust-card,
+    .product-card,
+    .region-card,
+    .audience-card,
+    .why-card,
+    .economics-card,
+    .contact-item,
+    .apply-box,
+    .form-box { padding: 24px; }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      background: linear-gradient(180deg, rgba(19,145,235,0.18), rgba(19,145,235,0.08));
+      border: 1px solid rgba(80,194,255,0.18);
+      margin-bottom: 14px;
+    }
+
+    .market-box {
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .market-box::after {
+      content: "";
+      position: absolute;
+      right: -30px;
+      top: -30px;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,201,40,0.18), transparent 70%);
+    }
+
+    .big-stat {
+      font-size: clamp(42px, 5vw, 68px);
+      line-height: 1;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .product-card,
+    .why-card,
+    .region-card { position: relative; overflow: hidden; }
+
+    .product-card::after,
+    .why-card::after {
+      content: "";
+      position: absolute;
+      right: -18px;
+      bottom: -18px;
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(80,194,255,0.12), transparent 70%);
+    }
+
+    .product-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: #d3efff;
+      background: rgba(19,145,235,0.10);
+      border: 1px solid rgba(80,194,255,0.18);
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    .section-subline {
+      color: var(--muted);
+      max-width: 820px;
     }
 
     ul.clean {
@@ -264,80 +438,105 @@
       color: var(--muted);
       margin: 10px 0 0;
     }
+
     ul.checklist {
       list-style: none;
       padding: 0;
       margin: 0;
     }
+
     ul.checklist li {
       padding-left: 28px;
       position: relative;
       margin-bottom: 12px;
       color: var(--muted);
     }
+
     ul.checklist li::before {
       content: "✓";
       position: absolute;
       left: 0;
       top: 0;
-      color: var(--green);
+      color: #82f0b7;
       font-weight: 700;
     }
 
-    .apply-box,
-    .form-box { padding: 26px; }
+    .region-kicker {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #c8f3dd;
+      background: rgba(26,188,105,0.12);
+      border: 1px solid rgba(26,188,105,0.18);
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+
     form {
       display: grid;
       gap: 14px;
     }
+
     .field-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 14px;
     }
+
     input,
     select {
       width: 100%;
       padding: 14px;
       border-radius: 12px;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(255,255,255,0.12);
       font-size: 15px;
-      background: #fff;
+      background: rgba(255,255,255,0.04);
+      color: #fff;
       outline: none;
     }
+
+    input::placeholder { color: #a3bad0; }
+    option { color: #111; }
+
     input:focus,
     select:focus {
-      border-color: var(--primary);
-      box-shadow: 0 0 0 4px rgba(15,134,216,0.10);
+      border-color: rgba(80,194,255,0.40);
+      box-shadow: 0 0 0 4px rgba(80,194,255,0.10);
     }
+
     .small-note {
       font-size: 13px;
-      color: var(--muted);
+      color: var(--muted-2);
     }
 
     .quick-details {
-      background: linear-gradient(180deg, #f8fbfd 0%, #eef6fb 100%);
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
     }
-    .contact-item { padding: 22px; }
+
     .contact-item a {
-      color: var(--primary-dark);
+      color: #d6efff;
       font-weight: 700;
     }
 
     .footer {
-      background: #0f2233;
+      background: rgba(255,255,255,0.02);
       color: rgba(255,255,255,0.88);
-      padding: 36px 0 100px;
-      margin-top: 30px;
+      padding: 38px 0 100px;
+      margin-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.08);
     }
+
     .footer p,
-    .footer a { color: rgba(255,255,255,0.78); }
+    .footer a { color: rgba(255,255,255,0.76); }
+
     .footer-brand {
       display: flex;
       align-items: center;
       gap: 12px;
       margin-bottom: 10px;
     }
+
     .footer-brand img {
       width: 48px;
       height: 48px;
@@ -355,7 +554,7 @@
       gap: 10px;
       padding: 14px 18px;
       border-radius: 999px;
-      background: #25D366;
+      background: linear-gradient(180deg, #24c870, #17ac60);
       color: #fff;
       font-weight: 700;
       box-shadow: 0 16px 34px rgba(37,211,102,0.30);
@@ -367,14 +566,15 @@
       right: 0;
       bottom: 0;
       z-index: 1000;
-      background: rgba(255,255,255,0.96);
+      background: rgba(8,20,32,0.94);
       backdrop-filter: blur(10px);
-      border-top: 1px solid var(--border);
+      border-top: 1px solid rgba(255,255,255,0.08);
       padding: 10px 12px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
     }
+
     .sticky-bar .btn {
       min-height: 46px;
       font-size: 14px;
@@ -386,15 +586,13 @@
       .trust-strip { grid-template-columns: repeat(4, 1fr); }
       .grid-5 { grid-template-columns: repeat(5, 1fr); }
       .region-grid { grid-template-columns: repeat(3, 1fr); }
-      .two-col,
-      .why-grid,
-      .contact-grid,
-      .form-grid { grid-template-columns: repeat(2, 1fr); }
+      .two-col, .why-grid, .contact-grid, .form-grid { grid-template-columns: repeat(2, 1fr); }
       .field-grid { grid-template-columns: repeat(2, 1fr); }
       .sticky-bar { display: none; }
     }
 
     @media (max-width: 767px) {
+      .section { padding: 72px 0; }
       .floating-whatsapp {
         bottom: 78px;
         right: 14px;
@@ -415,33 +613,40 @@
           <span>Authorised Dealer Opportunity | Uttar Pradesh</span>
         </div>
       </div>
-      <a href="#form" class="btn btn-primary">Apply Now</a>
+      <a href="#form" class="btn btn-primary">Start Your Dealership Today</a>
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero section first">
     <div class="container">
       <div class="hero-grid">
         <div class="hero-copy card">
           <div class="eyebrow">Dealer Opportunity</div>
           <h1 class="section-title">Become an Authorised CUMI Dealer in Uttar Pradesh</h1>
           <p class="hindi-line">उत्तर प्रदेश में CUMI के अधिकृत डीलर बनें</p>
-          <p class="lead">High demand for grinding wheels, cutting blades, sandpaper, flap discs and industrial abrasives across Uttar Pradesh.</p>
-          <p><strong>उत्तर प्रदेश में ग्राइंडिंग व्हील और कटिंग प्रोडक्ट्स की लगातार मांग है</strong></p>
+          <p class="lead">Join a trusted industrial brand and unlock a dealership opportunity in a <strong>₹300+ Cr abrasive market in Uttar Pradesh with strong and consistent demand</strong>.</p>
+          <p><strong>उत्तर प्रदेश में ₹300+ करोड़ के एब्रैसिव मार्केट में मजबूत और लगातार मांग के साथ डीलरशिप अवसर प्राप्त करें।</strong></p>
 
           <div class="btn-wrap">
-            <a href="#form" class="btn btn-primary">Apply for Dealership</a>
-            <a href="https://wa.me/917845121555?text=I%20am%20interested%20in%20CUMI%20dealership%20in%20UP" class="btn btn-secondary" target="_blank" rel="noopener">WhatsApp पर जानकारी प्राप्त करें</a>
+            <a href="#form" class="btn btn-primary">Apply for Dealership – Limited Slots Available</a>
+            <a href="https://wa.me/917845121555?text=I%20am%20interested%20in%20CUMI%20dealership%20in%20UP" class="btn btn-secondary" target="_blank" rel="noopener">डीलर बनने के लिए आवेदन करें</a>
+          </div>
+
+          <div class="hero-badges">
+            <span class="hero-badge">Pan-India Presence</span>
+            <span class="hero-badge">Trusted Industrial Brand</span>
+            <span class="hero-badge">Wide Product Portfolio</span>
+            <span class="hero-badge">Better Margins</span>
           </div>
 
           <div class="hero-meta">
             <div class="mini-stat"><strong>Authorised Dealership</strong><span>Official brand opportunity</span></div>
             <div class="mini-stat"><strong>Better Margins</strong><span>Growth-focused dealer model</span></div>
             <div class="mini-stat"><strong>Pan-India Presence</strong><span>Trusted market footprint</span></div>
-            <div class="mini-stat"><strong>Made in India</strong><span>Strong trust and local appeal</span></div>
+            <div class="mini-stat"><strong>Wide Product Portfolio</strong><span>Multiple sales opportunities</span></div>
           </div>
 
-          <p class="hero-note">Limited dealer slots available in select UP markets.</p>
+          <p class="hero-note">High-demand, repeat-use products support continuous sales and stronger business stability.</p>
         </div>
 
         <div class="hero-visual card">
@@ -463,7 +668,7 @@
         <div class="card trust-card"><div class="icon">✅</div><h3>Authorised Dealership</h3><p>Sell with official brand backing.</p></div>
         <div class="card trust-card"><div class="icon">📈</div><h3>Better Margins</h3><p>Built for dealer-led business growth.</p></div>
         <div class="card trust-card"><div class="icon">🌍</div><h3>Pan-India Presence</h3><p>Trusted across multiple markets.</p></div>
-        <div class="card trust-card"><div class="icon">🇮🇳</div><h3>Made in India</h3><p>Strong manufacturing credibility.</p></div>
+        <div class="card trust-card"><div class="icon">🏭</div><h3>Trusted Industrial Brand</h3><p>Strong credibility with a wide product portfolio.</p></div>
       </div>
     </div>
   </section>
@@ -471,13 +676,13 @@
   <section class="section">
     <div class="container">
       <div class="eyebrow">Market Opportunity</div>
-      <h2 class="section-title">₹300+ Cr Market Opportunity in Uttar Pradesh</h2>
+      <h2 class="section-title">₹300+ Cr Abrasive Market in Uttar Pradesh</h2>
       <p class="hindi-line">उत्तर प्रदेश में एब्रैसिव उत्पादों की लगातार और बड़े स्तर पर मांग है</p>
 
       <div class="card market-box">
         <div class="big-stat">₹300+ Cr</div>
-        <p>Uttar Pradesh has strong demand across fabrication, construction, workshops, industrial supply, and hardware retail.</p>
-        <p>The right product mix can help dealers serve both repeat retail buyers and trade customers.</p>
+        <p><strong>₹300+ Cr abrasive market in Uttar Pradesh with strong and consistent demand</strong> across fabrication, construction, workshops, industrial supply, and hardware retail.</p>
+        <p>A dealer with the right product mix can benefit from recurring buyer demand and long-term market potential.</p>
       </div>
     </div>
   </section>
@@ -485,7 +690,11 @@
   <section class="section">
     <div class="container">
       <div class="eyebrow">Product Demand</div>
-      <h2 class="section-title">High Demand Products</h2>
+      <h2 class="section-title">High Demand, Repeat-Use Product Categories</h2>
+      <p class="section-subtitle"><strong>High-demand, repeat-use products ensuring continuous sales and business stability</strong></p>
+      <p class="hindi-line">उच्च मांग और बार-बार उपयोग होने वाले उत्पाद, जो लगातार बिक्री और व्यापार स्थिरता सुनिश्चित करते हैं</p>
+      <p class="section-subline">Abrasive products are repeat-consumption products, ensuring continuous sales cycle.</p>
+      <p class="hindi-line">एब्रैसिव उत्पाद बार-बार उपयोग होने वाले उत्पाद हैं, जिससे लगातार बिक्री बनी रहती है।</p>
 
       <div class="grid-5">
         <div class="card product-card"><div class="product-tag">Core Demand</div><h3>Grinding Wheels</h3><p>ग्राइंडिंग व्हील</p></div>
@@ -499,14 +708,44 @@
 
   <section class="section">
     <div class="container">
+      <div class="eyebrow">Business Model</div>
+      <h2 class="section-title">Why This Business Model Works</h2>
+      <p class="hindi-line">बार-बार उपयोग होने वाले उत्पाद होने के कारण बिक्री का चक्र लगातार बना रहता है।</p>
+
+      <div class="two-col">
+        <div class="card economics-card">
+          <h3>Repeat-Consumption Category</h3>
+          <ul class="checklist">
+            <li>Abrasive products are repeat-consumption products</li>
+            <li>Continuous sales cycle improves dealer confidence</li>
+            <li>Repeat-use categories support recurring purchases</li>
+            <li>Strong local usage helps steady stock movement</li>
+          </ul>
+        </div>
+        <div class="card economics-card">
+          <h3>Why Dealers Benefit</h3>
+          <ul class="checklist">
+            <li>Business stability through repeat demand</li>
+            <li>Better planning for stock and sales cycles</li>
+            <li>Opportunity to serve both retail and trade buyers</li>
+            <li>Scalable model for UP market expansion</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
       <div class="eyebrow">Regional Demand</div>
-      <h2 class="section-title">Demand Across Regions</h2>
-      <p class="hindi-line">उत्तर प्रदेश में अलग-अलग क्षेत्रों में अलग-अलग मांग है</p>
+      <h2 class="section-title">Target Sales Opportunity Across Uttar Pradesh</h2>
+      <p class="section-subtitle">Different regions in UP have different product demand, enabling targeted sales opportunities.</p>
+      <p class="hindi-line">उत्तर प्रदेश के अलग-अलग क्षेत्रों में अलग-अलग उत्पादों की मांग है, जिससे लक्षित बिक्री के अवसर मिलते हैं।</p>
 
       <div class="region-grid">
-        <div class="card region-card"><h3>East UP</h3><p>Cutting & thin wheels demand</p><p><strong>पूर्वी यूपी</strong></p></div>
-        <div class="card region-card"><h3>Central UP</h3><p>High volume demand</p><p><strong>सेंट्रल यूपी</strong></p></div>
-        <div class="card region-card"><h3>West UP</h3><p>Industrial grinding demand</p><p><strong>वेस्ट यूपी</strong></p></div>
+        <div class="card region-card"><span class="region-kicker">East UP</span><h3>Cutting & Thin Wheels</h3><p>Strong demand in local trade-led markets and fast-moving hardware channels.</p></div>
+        <div class="card region-card"><span class="region-kicker">Central UP</span><h3>High-Volume Demand</h3><p>Steady movement driven by workshops, hardware buyers, and reseller activity.</p></div>
+        <div class="card region-card"><span class="region-kicker">West UP</span><h3>Industrial Grinding Demand</h3><p>Industrial and fabrication clusters create strong opportunity for abrasive products.</p></div>
       </div>
     </div>
   </section>
@@ -514,7 +753,7 @@
   <section class="section">
     <div class="container">
       <div class="eyebrow">Who Should Apply</div>
-      <h2 class="section-title">Ideal for These Businesses</h2>
+      <h2 class="section-title">Ideal for Dealer, Trade, and Industrial Supply Businesses</h2>
       <p class="hindi-line">यह अवसर इन लोगों के लिए उपयुक्त है:</p>
 
       <div class="two-col">
@@ -523,7 +762,7 @@
           <ul class="checklist">
             <li>Hardware shop owners (हार्डवेयर दुकानदार)</li>
             <li>Industrial suppliers (इंडस्ट्रियल सप्लायर)</li>
-            <li>Dealers (डीलर)</li>
+            <li>Dealers and distributors (डीलर और डिस्ट्रीब्यूटर)</li>
             <li>Power tool sellers (पावर टूल विक्रेता)</li>
           </ul>
         </div>
@@ -547,10 +786,10 @@
       <h2 class="section-title">Grow with a Trusted Abrasives Brand</h2>
 
       <div class="why-grid">
-        <div class="card why-card"><h3>Strong Brand Presence</h3><p>Established industrial credibility and market trust.</p></div>
-        <div class="card why-card"><h3>Wide Product Range</h3><p>Serve multiple buyer needs with one dealership opportunity.</p></div>
-        <div class="card why-card"><h3>Consistent Demand</h3><p>Products suited for repeat requirement across retail and trade.</p></div>
-        <div class="card why-card"><h3>Dealer Growth Potential</h3><p>Designed for expansion in fast-moving product categories.</p></div>
+        <div class="card why-card"><h3>Trusted Industrial Brand</h3><p>Established industrial credibility with pan-India presence.</p></div>
+        <div class="card why-card"><h3>Wide Product Portfolio</h3><p>Serve multiple buyer needs with one dealership opportunity.</p></div>
+        <div class="card why-card"><h3>Consistent Demand</h3><p>Repeat-demand categories support ongoing business movement.</p></div>
+        <div class="card why-card"><h3>Competitive Market Readiness</h3><p>Compete effectively in a market where buyers already recognise leading abrasive brands such as 3M and Powertex.</p></div>
       </div>
 
       <p class="hindi-line" style="margin-top:20px;">एक भरोसेमंद ब्रांड के साथ अपना व्यापार बढ़ाएं</p>
@@ -560,13 +799,15 @@
   <section id="form" class="section">
     <div class="container">
       <div class="eyebrow">Apply Now</div>
-      <h2 class="section-title">Apply for Dealership</h2>
+      <h2 class="section-title">Apply for Dealership – Limited Slots Available</h2>
       <p class="hindi-line">डीलर बनने के लिए आवेदन करें</p>
+      <p class="section-subtitle"><strong>Fill this form to receive dealership details and product information</strong></p>
+      <p class="hindi-line">डीलरशिप जानकारी प्राप्त करने के लिए फॉर्म भरें</p>
 
       <div class="form-grid">
         <div class="card apply-box">
-          <h3>Start Your Enquiry Today</h3>
-          <p>Share your business details and the CUMI team can connect with you for dealership availability and product interest.</p>
+          <h3>Start Your Dealership Today</h3>
+          <p>Submit your details to connect with the CUMI team for dealership availability, product interest, and next-step discussion.</p>
           <ul class="clean">
             <li>Short form for faster response</li>
             <li>Suitable for dealer and distributor enquiries</li>
@@ -574,7 +815,7 @@
           </ul>
 
           <div class="btn-wrap">
-            <a href="https://wa.me/917845121555?text=I%20want%20to%20apply%20for%20CUMI%20dealership%20in%20UP" class="btn btn-secondary" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            <a href="https://wa.me/917845121555?text=I%20want%20to%20apply%20for%20CUMI%20dealership%20in%20UP" class="btn btn-secondary" target="_blank" rel="noopener">Get Details on WhatsApp</a>
           </div>
         </div>
 
@@ -605,7 +846,7 @@
             </div>
 
             <p class="small-note">We will contact you only for dealership-related follow-up.</p>
-            <a href="#" class="btn btn-primary">Submit Enquiry</a>
+            <a href="#" class="btn btn-primary">Start Your Dealership Today</a>
           </form>
         </div>
       </div>
@@ -629,7 +870,7 @@
           <p><strong>Phone:</strong> <a href="tel:08035120000">08035120000</a></p>
           <p><strong>Landline:</strong> <a href="tel:+914430006184">+91 44 3000 6184</a></p>
           <p><strong>WhatsApp:</strong> <a href="https://wa.me/917845121555" target="_blank" rel="noopener">+91 78451 21555</a></p>
-          <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#9cf9f1fdf5f0dcffe9f1f5b2f1e9eee9fbfdececfdb2fff3f1"><span class="__cf_email__" data-cfemail="07626a666e6b4764726a6e296a72757260667777662964686a">[email&#160;protected]</span></a></p>
+          <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#46232b272f2a0625332b2f682b33343321273636276825292b"><span class="__cf_email__" data-cfemail="56333b373f3a1635233b3f783b23242331372626377835393b">[email&#160;protected]</span></a></p>
         </div>
       </div>
     </div>
